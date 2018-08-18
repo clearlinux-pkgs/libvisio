@@ -1,0 +1,74 @@
+libvisio 0.1.6
+- Consider stencil txtxform in binary formats (tdf#67914).
+- Parse font width scaling.
+- Fix dependency of tests on time zone (tdf#92396).
+- Enable building of unit tests without command-line tools.
+- Remove namespace check for VDX to allow parsing documents produced by
+  lucidchart.com (tdf#98791).
+- Output shape ID if set.
+- Fix parsing of text block background color in some cases.
+- Write bitmaps with color palette correctly.
+- Deduce text encoding from font name.
+- Parse theme fill and shadow color.
+- Parse font scheme in VSDX documents.
+- Require C++11 for build.
+- Fix various crashes, leaks and hangs when reading damaged files found
+  by oss-fuzz.
+- Drop outdated Windows project files.
+- Fix some issues found by Coverity.
+- Many other small improvements and fixes.
+
+libvisio 0.1.5
+
+- Rewrite text output to avoid empty spans and to make the function
+  a bit more readable for common mortal (wo)man.
+- Initial emulation of line rounding property (tdf#90603).
+- Make --help output of all command line tools more help2man-friendly.
+
+libvisio 0.1.4
+
+- Implement overriding of colour of lines and of text from layer
+  properties (tdf#50309, tdf#68392) and the visibility and/or
+  printability of a layer.
+- Fix incorrect handling of stencil text (tdf#90154).
+- Basic initial implementation of hatch fill (tdf#44552, tdf#76835).
+- Implement support of bullets/lists (tdf#92349)
+- Implement support of default tab-stops and custom tab-sets in
+  paragraph properties.
+- Fix for reading of names of pages if present.
+- Fix build with boost 1.59.
+- Instead of line-break, spit out a new paragraph when a paragraph break
+  is found
+
+libvisio 0.1.3
+
+- Fix a build failure with some compilers.
+- Do not use C++11 syntax.
+
+libvisio 0.1.2
+
+- Fix several build problems with different compilers.
+- Import more metadata properties.
+- Fix theme colour import (tdf#92270).
+- Fix a bunch of crashes and hangs when reading broken documents, found
+  with the help of american-fuzzy-lop.
+- Fix several memory leaks.
+- Ignore errors when parsing metadata. This makes some documents readable
+  again.
+- Fix handling of character background (tdf#92271).
+
+libvisio 0.1.1
+
+- Fix a minor issue reported by Coverity.
+- Check arguments of public functions. Passing NULL no longer causes
+  a crash.
+- Set a minimal thickness for arrow markers to ensure they are visible.
+- Fix a crash when reading a broken file, found with the help of
+  american-fuzzy-lop.
+- Use symbol visibility on Linux. The library only exports the two public
+  functions now.
+- Import document metadata (fdo#86664).
+
+libvisio 0.1.0
+
+- switch to librevenge
