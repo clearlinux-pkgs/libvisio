@@ -4,7 +4,7 @@
 #
 Name     : libvisio
 Version  : 0.1.6
-Release  : 3
+Release  : 4
 URL      : https://dev-www.libreoffice.org/src/libvisio-0.1.6.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libvisio-0.1.6.tar.xz
 Summary  : Library for parsing the visio file format structure
@@ -43,6 +43,7 @@ Group: Development
 Requires: libvisio-lib = %{version}-%{release}
 Requires: libvisio-bin = %{version}-%{release}
 Provides: libvisio-devel = %{version}-%{release}
+Requires: libvisio = %{version}-%{release}
 
 %description dev
 dev components for the libvisio package.
@@ -80,20 +81,28 @@ license components for the libvisio package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1542500248
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1566840096
+export GCC_IGNORE_WERROR=1
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1542500248
+export SOURCE_DATE_EPOCH=1566840096
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libvisio
 cp COPYING.MPL %{buildroot}/usr/share/package-licenses/libvisio/COPYING.MPL
