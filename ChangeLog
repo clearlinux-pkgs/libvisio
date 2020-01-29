@@ -1,3 +1,437 @@
+2019-08-17  David Tardon  <dtardon@redhat.com>  [0dd9d58e8f69061db4f073933f5f96ed32939a71]
+
+	distribute new test files
+
+	Change-Id: I87e0b4e921605a462b116c2820b2a7d55bbb5448
+
+2019-08-17  David Tardon  <dtardon@redhat.com>  [fc10bd1c08ce8185865268cbedebdae0b0dc5d61]
+
+	keep the file list sorted
+
+	Change-Id: I072ae492e3ecc538d78ac071793042c77321b708
+
+2019-08-17  David Tardon  <dtardon@redhat.com>  [e22c55d8ead89bf4ba2f37629c021f9f9ff74fa7]
+
+	prepare for a release
+
+	Change-Id: I660d3ccee41ef7fedf24819831cd56460cacba64
+
+2019-08-12  David Tardon  <dtardon@redhat.com>  [8f0ce0bb48185458bcaa0efb8cc01da7386e208a]
+
+	simplify creation of xmlReader
+
+	Change-Id: I95815a3f19c612a2926ea1d80f07abbaba1f5595
+
+2019-08-07  Caolán McNamara  <caolanm@redhat.com>  [b480f8f038e2bc6556023b08d7ad4c617a11ed94]
+
+	drop XML_PARSE_NOENT and default to not expanding entities
+
+	Change-Id: I3c3f143b97df19227e274a1591471faa3dd3ed5f
+	Reviewed-on: https://gerrit.libreoffice.org/76779
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2019-08-04  David Tardon  <dtardon@redhat.com>  [df4e769e53fa74929a6606f568abd1b1b76ea312]
+
+	cid#1371582 check return value
+
+	Change-Id: If6f80449f6ba0584979aade8887d639996bc5e14
+
+2019-08-04  David Tardon  <dtardon@redhat.com>  [be7f666de460bd3c89ed51f43039858ca1614c7c]
+
+	cid#1371581 check return value
+
+	Change-Id: I794e08141e15795ee19edca755e5cbfa4b9ff71d
+
+2019-08-04  David Tardon  <dtardon@redhat.com>  [1972bec9fe34a09399b785204569ca3189039c7e]
+
+	cid#1452212 fix memory leak
+
+	Change-Id: Idec224a8c688a624c67db07de28add2040f3bc59
+
+2019-08-04  David Tardon  <dtardon@redhat.com>  [19401333010f5874b70373282c1c4ed29870f659]
+
+	sort includes
+
+	Change-Id: Idf362dcc4ede95dceb80de5a5c2e6ac7dff5ff21
+
+2019-08-04  David Tardon  <dtardon@redhat.com>  [f6c48b831afdea999ed68a9b717c78d728a0e677]
+
+	cid#1452210 fix memory leak
+
+	Change-Id: Ifda9cbb926993364ddb68fcb96dc66e0c765d2ef
+
+2019-08-04  David Tardon  <dtardon@redhat.com>  [0a62d06de2462b6be9f086b5997a99eb2feb7246]
+
+	make trivial copy ctors default too
+
+	Change-Id: I9d1359ea3867add91eb9c86eea6b25c6c98abc44
+
+2019-08-04  David Tardon  <dtardon@redhat.com>  [829afb86ef093446cfb624cc492902eb36013bd1]
+
+	make trivial assignment operators default
+
+	Change-Id: Ibb939f38dbe4ff0a0a61aad29a4a4da58efcb743
+
+2019-08-04  David Tardon  <dtardon@redhat.com>  [75360a312918780ed5e34a44e3b8b0da5716c5bc]
+
+	un-constify return value of operator=
+
+	Change-Id: Ib72d1f92e6b080e5c2dd17cc57b2c7f48c917a77
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [8480dedbe1a5fd27df4c0bfc0ecbb868ad081a8b]
+
+	WaE: implicitly-declared Pointer::operator= is deprecated
+
+	Change-Id: I1a092b3e976bd31b1764698001b9f320757d2cc4
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [3a1c047b8de4c354b4fb866a7c14012e124067ee]
+
+	WaE: implicitly-declared VSDOptionalFillStyle::operator= is deprecated
+
+	Change-Id: Iabc5a0e4fa4b223fd39405829257cce35d44d92e
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [f860cf6342530b80248f9c054fa16d1b293509a0]
+
+	WaE: implicitly-declared VSDTextBlockStyle::operator= is deprecated
+
+	Change-Id: Ic482a4bdd3386504ec65fb04c5d302bc2218ecf9
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [d8f9af1e0e06f2439c1737312744f0b6f83e60ab]
+
+	WaE: implicitly-declared VSDOptionalTextBlockStyle::operator= is deprecated
+
+	Change-Id: Idfc7955fb75afd14cec262f8815d3cb1cebe3900
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [7af74e2dcda9e31369b57e84b7e3f0341401e653]
+
+	WaE: implicitly-declared VSDParaStyle::operator= is deprecated
+
+	Change-Id: I4b6e91f40cfb24f4492eb75f5b8ffff53fbddf7f
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [59be5ee54f84a3cf481a5d9dd02c78241327daaf]
+
+	WaE: implicitly-declared VSDOptionalParaStyle::operator= is deprecated
+
+	Change-Id: Ide41be4bbae843c0f96240efcb0d85f60b6f37ec
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [8f3932b2cf4d550787546feea93bf9c45278d36b]
+
+	WaE: implicitly-declared VSDCharStyle::operator= is deprecated
+
+	Change-Id: Iaa5ac6e94bb53afebc9a09c42134cd64583cfc43
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [129afac556b38de50abdba5a3267ef88561418ac]
+
+	WaE: implicitly-declared VSDOptionalCharStyle::operator= is deprecated
+
+	Change-Id: I1729b9229bc01062486f9e124c3d3f13f6aaacf8
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [4136243660429bc2f9775847e3992b7446f2805b]
+
+	WaE: implicitly-declared VSDFillStyle::operator= is deprecated
+
+	Change-Id: Ie3ca69e7386ebbf04f7b5972f3ed96139e26015c
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [ee13a1bffa6d78924d1d2312abc5d86078b2b251]
+
+	WaE: implicitly-declared VSDLineStyle::operator= is deprecated
+
+	Change-Id: I6760c2d8bd4bb85e0d760abdb86beea45e4fffeb
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [b1abd7606f21dbad9119788087c373f3caae171a]
+
+	WaE: implicitly-declared VSDOptionalLineStyle::operator= is deprecated
+
+	Change-Id: I599cc0a57aad586def69f548955800082a5a4bdf
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [3c9fca3cc5349bd91369ea6cc32da37d52290d8b]
+
+	WaE: implicitly-declared VSDBullet::operator= is deprecated
+
+	Change-Id: Ib3f64f30ffe1616c08bb383ed1c462da6d4a31bc
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [4dfbf7940eb0821c76e2b66b5f27ae9eed31220b]
+
+	WaE: implicitly-declared XForm::operator= is deprecated
+
+	Change-Id: I60e9d0bc7f148f3289552d0169b6cebfba8edee4
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [a7455c5213007603bd6b129288cf00569e4817b8]
+
+	WaE: implicitly-declared VSDMisc::operator= is deprecated
+
+	Change-Id: I02ff6e1dc02c58ea9fcf26aaacfef245f66fe61a
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [dfed7b1e459f3bde8dcbb997e5664deeff9e338d]
+
+	WaE: implicitly-declared VSDName::operator= is deprecated
+
+	Change-Id: Ic99122062fc314a3ae6e3b904e4415f8b276f646
+
+2019-08-03  David Tardon  <dtardon@redhat.com>  [95ccb8facab44862b12f69eac9b52ede02a1a55d]
+
+	astyle
+
+	Change-Id: I2d5fac3180897b3a35fa62edf8dddb545b3595be
+
+2019-07-24  Bartosz Kosiorek  <gang65@poczta.onet.pl>  [d6205a23ff36b1ab1f876cebfd41ad1acf19aac5]
+
+	tdf#126402 Fix line formating issue
+
+	With this commit, I have implemented more Visio arrow styles
+	and I have added support importing Center Line Ending.
+
+	As a result many import issues of Visio diagrams was resolved.
+
+	Change-Id: I5284e3e53b9d5174ab49e841c66be58e06060760
+	Reviewed-on: https://gerrit.libreoffice.org/75635
+	Tested-by: Bartosz Kosiorek <gang65@poczta.onet.pl>
+	Reviewed-by: Bartosz Kosiorek <gang65@poczta.onet.pl>
+
+2019-07-12  Bartosz Kosiorek  <gang65@poczta.onet.pl>  [2ae597695c8ad41dcbdba8405157053a44564abb]
+
+	tdf#126292 Fix unit conversion
+
+	With this commit I have added unit support.
+
+	In .VSD format, all length values (points, kilometers, feets etc.) are stored in Inches,
+	all Elapsed time are stored in Days,
+	all angles are stored in radians.
+
+	It means that value should be converted from Inch/ Days or radians,
+	even if the unit is not displayed.
+
+	For example:
+	 - centimeter values should multipled by 2.54
+	 - elapsed hour values should be multiplied by 24
+	 - percent values should be multipled by 100
+
+	Change-Id: I88711a1bf1bfd6078dc6948194449bcc91f34cce
+	Reviewed-on: https://gerrit.libreoffice.org/75374
+	Reviewed-by: Bartosz Kosiorek <gang65@poczta.onet.pl>
+	Tested-by: Bartosz Kosiorek <gang65@poczta.onet.pl>
+
+2019-07-09  Bartosz Kosiorek  <gang65@poczta.onet.pl>  [9bf6a30786fb75cb725fe038d77ef03e1ebc4bc0]
+
+	tdf#126292 Fix unit conversion
+
+	Change-Id: I88711a1bf1bfd6078dc6948194449bcc91f34cce
+
+2019-07-09  Bartosz Kosiorek  <gang65@poczta.onet.pl>  [187e3c83fe021267b913068432d1387ea140944a]
+
+	Replace magic numbers with defines
+
+	Change-Id: I76211f335341c4ebc40c38766dc04969d3b420df
+	Reviewed-on: https://gerrit.libreoffice.org/75245
+	Reviewed-by: Bartosz Kosiorek <gang65@poczta.onet.pl>
+	Tested-by: Bartosz Kosiorek <gang65@poczta.onet.pl>
+
+2019-07-08  Bartosz Kosiorek  <gang65@poczta.onet.pl>  [f96f3ee3a44d6c7af28e1eb67c8da9d36012b113]
+
+	tdf#76829 tdf#98291 Visio: Fix number conversion to string
+
+	The method 'doubleToString' is copied from librevenge:
+	https://sourceforge.net/p/libwpd/librevenge/ci/master/tree/src/lib/RVNGProperty.cpp#l35
+
+	Method duplication allows to do not break ABI of librevenge.
+
+	Change-Id: Ie1bce018cf2e1fd38af07db4d19445d1bffe9005
+	Reviewed-on: https://gerrit.libreoffice.org/75070
+	Reviewed-by: Miklos Vajna <vmiklos@collabora.com>
+	Tested-by: Miklos Vajna <vmiklos@collabora.com>
+
+2019-07-03  Bartosz Kosiorek  <gang65@poczta.onet.pl>  [d410b9bd6c763ec0037031b6b5913f754264beca]
+
+	tdf#76829 tdf#98291 Visio: Fix date and time conversion to string
+
+	The documentation which implementation was based on was
+	taken from:
+	https://docs.microsoft.com/en-us/openspecs/sharepoint_protocols/ms-vsdx/50c23601-c943-4ff2-b4a1-02445f52daf0
+
+	Change-Id: I8a3544d198d0376bdc31b158c073f5340dff7237
+	Reviewed-on: https://gerrit.libreoffice.org/74743
+	Tested-by: Miklos Vajna <vmiklos@collabora.com>
+	Reviewed-by: Miklos Vajna <vmiklos@collabora.com>
+
+2019-01-31  Miklos Vajna  <vmiklos@collabora.com>  [c5a43cf0bb3d002cc4ff396ffbf85ebe9dd0da29]
+
+	Fix too small loop variables
+
+	These loop variables had narrower type than the iteration's upper bound.
+
+	Change-Id: Ie289e2fd5b11e3b654fc2e214e8f03dadee6fc65
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [c1bb49486e73e9e19944be6a995e3bbd96210f8f]
+
+	move define where it should be
+
+	Change-Id: Ie8080354158b01bd29c14105dce3919eb19a01e6
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [5fa2b1a754a026f7c36f339b396574c1c43700c8]
+
+	make sure headers are self-contained
+
+	Change-Id: I77beb4ce00ec070f2599362f6462d967613abd2b
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [b52f763a0026d8c3eb2aa4b2ec3fa8a5abedbe9d]
+
+	drop unused headers
+
+	Change-Id: I697c5ee7e9ed2c694452e00ca2ed77c92c7650a3
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [26ea6f33a413861a4764bbfae6f244ec38f7bad8]
+
+	use unique_ptr for text xform
+
+	Change-Id: I2dacd0bfe4024055e9233730ff6485c8631f6a48
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [8a3b290280fe07a990d7a84b21a0cdc5f28d1c2f]
+
+	use unique_ptr to hold foreign data
+
+	Change-Id: I605e3fc76a7f909566450ccff33649745f16f200
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [160825ec6e25b3de6086479f856d14a6dcaaa60a]
+
+	use unique_ptr
+
+	Change-Id: I2677dfde71b049c287df2ea68d656b0ad63dc8df
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [e3f0216ba318fddbfab2b92159c363dced48082e]
+
+	avoid manual memory mgmt
+
+	Change-Id: If7229a08104410cd2df3b84202c75e68cbcfc114
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [40c8a1d8216bebfccfcea5ec55af2848f3a72170]
+
+	guard against self-assignment
+
+	Change-Id: I2eff7abe7d341455c111291ecf81ff348846bc11
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [467618a5b883c7303fc6ef8e10756e203ceaed11]
+
+	avoid manual memory mgmt
+
+	Change-Id: I4694b93a135dc568beb234a6300a492326122257
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [8dfa37807ee1d40f98729a911db3a52df0d2e65b]
+
+	use make_unique
+
+	Change-Id: I74fb98a89eea16a230319d024017c37febf908f9
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [64c199140f8c5e3ebd6af9a9204a7f84b4746af1]
+
+	avoid manual memory mgmt
+
+	Change-Id: I34c48bf74b8b1c0fdb5018b7d8fedba1b196beee
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [d6867e9e9041fc02a8ec7ffe084a08a51e97166b]
+
+	drop duplicate include
+
+	Change-Id: I22f98e6680d1ef8fd78ce41f54b39a8839518d74
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [3dbae3c48fc17232fc9815ec4f16ea1a01c97474]
+
+	avoid manual memory mgmt
+
+	Change-Id: Ife502d6cd180e91c5b4f220cf2f008260143a35e
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [a6990f6f931dbfd33b61be5ae7063b904680daa4]
+
+	simplify a bit
+
+	Change-Id: I27ebb6af37ce169a657e7ed52a7bc77e323e1eb2
+
+2018-03-25  David Tardon  <dtardon@redhat.com>  [b6380006ba9395d30a2263a0a3467fc8bc9f52ba]
+
+	use unique_ptr
+
+	Change-Id: I15a0ece5b4a71fa82f23bff85ad9e5011129edf6
+
+2018-03-12  David Tardon  <dtardon@redhat.com>  [f85c44b280a57cc273217c8385dd95a4989bd827]
+
+	speed up angle normalization
+
+	Change-Id: I2531cae69ef9a64d5004692919bdcd96a069e994
+
+2018-01-30  David Tardon  <dtardon@redhat.com>  [a10cc6f3f9412d1d1b8cd604374d6625dda60485]
+
+	avoid more potential memory leaks
+
+	Change-Id: Ia8bb68d617687dc4f8ca37219f78f818d9fd8b57
+
+2018-01-30  David Tardon  <dtardon@redhat.com>  [edf7deeb81f044d7fde5ad1f384e61c4790fa7c2]
+
+	ofz#5816 avoid memory leak
+
+	Change-Id: Ib23bdeb0a96590f8a22248bc5f92f85773ade58a
+
+2017-12-01  Miklos Vajna  <vmiklos@collabora.co.uk>  [803830beed106e9de8d727a5e7eedd53e8dbf414]
+
+	VSDContentCollector: remove dead isParagraphOpened assignment
+
+	Local variable, not read later, so it can go.
+
+	Change-Id: Ide6c1b6976c43a3b9714d79d46631b7a80ddb300
+
+2017-11-30  Miklos Vajna  <vmiklos@collabora.co.uk>  [b298ea9bbbde96fbb4350bcf6bd71f698fce3bfa]
+
+	VSDContentCollector: remove dead isSpanOpened assignment
+
+	Local variable, not read later, so it can just go.
+
+	Change-Id: I52bca4bb437f94cffe4475a8a81e3b6dd1242fda
+
+2017-11-29  Miklos Vajna  <vmiklos@collabora.co.uk>  [2baddb07cf518ca871d8969c694867d2d27c12d1]
+
+	VSDContentCollector: remove dead shapeId assignment
+
+	It's a by-value parameter, it's not read later in the function and the
+	assignment scope only includes conditions (not loops), so it's not read
+	later.
+
+	Change-Id: I56bed45c71de892d388fa534f8512b27245daf3a
+
+2017-11-26  David Tardon  <dtardon@redhat.com>  [afa9437bec26a156aebdd60bc05fa48d68067629]
+
+	ofz: ignore invalid/incomplete font entries
+
+	Change-Id: Ic5e6cf0afe62e92fba1503a1a3540eb50800dc3c
+
+2017-11-08  Miklos Vajna  <vmiklos@collabora.co.uk>  [07863ce4ede0ad8752627e8e96db63bf58ca9ba7]
+
+	Use auto when declaring iterators and when initializing with a cast
+
+	Change-Id: I5a3b4334c2cfcf462952a8a00d97abc59eda1f19
+
+2017-10-30  David Tardon  <dtardon@redhat.com>  [6ba35e73d071dd396fc919e09daa09151354cb95]
+
+	ofz#3711 band-aid for OOB access in NURBS
+
+	Change-Id: Ied73be7f36bd070a38c13243dd851d0bcd4056a3
+
+2017-10-22  David Tardon  <dtardon@redhat.com>  [15f3774513d0181ad90da382297c175cc3424462]
+
+	fix debug build
+
+	Change-Id: I860b6034e5d833900652aec8c3647eeae185e538
+
+2017-10-21  David Tardon  <dtardon@redhat.com>  [635a8f163ab10911663fed64ae23d3438a41fb44]
+
+	add newline
+
+	Change-Id: Iaf0fef207f5b49f227902f5cf134de969ef6311a
+
+2017-10-21  David Tardon  <dtardon@redhat.com>  [84f253fb4564c8053d875ba65dadd7f5481f5f3f]
+
+	bump version
+
+	Change-Id: Ie0c074226cd3c53ea4dde335803bc8e9de2fcf8a
+
 2017-10-21  David Tardon  <dtardon@redhat.com>  [85529f5490b7b5d8ec3e8231db3b5640bce58839]
 
 	be explicit
