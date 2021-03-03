@@ -4,7 +4,7 @@
 #
 Name     : libvisio
 Version  : 0.1.7
-Release  : 8
+Release  : 9
 URL      : https://dev-www.libreoffice.org/src/libvisio-0.1.7.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libvisio-0.1.7.tar.xz
 Summary  : Library for parsing the visio file format structure
