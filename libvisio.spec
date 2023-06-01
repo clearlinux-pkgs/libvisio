@@ -5,7 +5,7 @@
 #
 Name     : libvisio
 Version  : 0.1.7
-Release  : 12
+Release  : 13
 URL      : https://dev-www.libreoffice.org/src/libvisio-0.1.7.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libvisio-0.1.7.tar.xz
 Summary  : Library for parsing the visio file format structure
@@ -91,7 +91,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685634466
+export SOURCE_DATE_EPOCH=1685646829
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -123,7 +123,7 @@ cd ../buildavx2;
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1685634466
+export SOURCE_DATE_EPOCH=1685646829
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libvisio
 cp %{_builddir}/libvisio-%{version}/COPYING.MPL %{buildroot}/usr/share/package-licenses/libvisio/9744cedce099f727b327cd9913a1fdc58a7f5599 || :
